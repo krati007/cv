@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+font-family: Calibri, Helvetica, sans-serif; background-color: rgba(109, 102, 103, 0.445);
+}
+
+
+.container { padding: 50px;
+background-color: rgb(208, 119, 235);
+
+}
+
+
+input[type=text], input[type=password], textarea {
+width: 100%; padding: 15px;
+ 
+margin: 5px 0 22px 0; display: inline-block; border: none; background: #f1f1f1;
+}
+
+
+
+input[type=text]:focus, input[type=password]:focus {
+background-color: orange; outline: none;
+}
+
+
+div {
+padding: 10px 0;
+
+}
+
+
+hr {
+border: 1px solid #f1f1f1; margin-bottom: 25px;
+}
+
+
+.registerbtn {
+background-color: #4CAF50; color: white;
+padding: 16px 20px; margin: 8px 0;
+ 
+border: none; cursor: pointer; width: 100%;
+opacity: 0.9;
+}
+
+
+
+.registerbtn:hover { opacity: 1;
+}
+</style>
+<script>
+function Radhika() { var name =
+document.forms["RegForm"]["Name"]; var email =
+document.forms["RegForm"]["Age"]; var phone =
+document.forms["RegForm"]["Address"]; var what =
+document.forms["RegForm"]["E-mail Address"]; var password =
+document.forms["RegForm"]["Phone number"]; var address =
+document.forms["RegForm"]["Date"]; var address =
+document.forms["RegForm"]["Roll Number"];
+ 
+if (name.value == "") {
+window.alert("Please enter your Name."); name.focus();
+return false;
+
+}
+if (name.value == "") { window.alert("Please enter your Age."); name.focus();
+return false;
+
+}
+if (address.value == "") {
+window.alert("Please enter your Address."); address.focus();
+return false;
+
+}
+if (email.value == "") { window.alert(
+"Please enter a valid E-mail address."); email.focus();
+return false;
+
+}
+if (phone.value == "") { window.alert(
+"Please enter your Phone number."); phone.focus();
+return false;
+ 
+}
+if (phone.value == "") { window.alert(
+"Please enter valid date"); phone.focus();
+return false;
+
+}
+if (phone.value == "") { window.alert(
+"Please enter your Roll number"); phone.focus();
+return false;
+
+}
+return true;
+}
+
+</script>
+</head>
+
+
+<body>
+<form>
+<div class="container">
+<center>
+<h1> Student Registeration Form</h1>
+</center>
+<hr>
+<label> Name </label>
+ 
+<input type="text" name="Name" placeholder="Name" required />
+<label> Age </label>
+<input type="text" name="Age" placeholder="Age" required />
+<label> Email Address </label>
+<input type="text" name="Email Address " placeholder="Email Address " required />
+<div>
+<label>
+Phone :
+</label>
+<input type="text" name="country code" placeholder="Country Code" value="+91" size="2" />
+<input type="text" name="phone" placeholder="phone no." size="10"
+/ required>
+<label> Address</label>
+<input type="text" name="Address" placeholder="Address" required
+/>
+<label> Roll No </label>
+<input type="text" name="Roll No" placeholder="Roll No" required />
+<label> Date </label>
+<input type="text" name="Date" placeholder="Date" required />
+<label> Student Photograph</label>
+<label for="myfile">Select a file:</label>
+<input type="file" id="myfile" name="myfile"><br><br>
+<input type="submit">
+<br>
+<br>
+ 
+Gender
+</label><br>
+<input type="radio" value="Male" name="gender" checked> Male
+<input type="radio" value="Female" name="gender"> Female
+<input type="radio" value="Other" name="gender"> Other
+</div>
+<label>
+Select your Branch
+</label><br>
+<input type="radio" value="CS" name="branch" checked> CS
+<input type="radio" value="IT" name="branch"> IT
+<input type="radio" value="ECE" name="branch"> ECE
+<input type="radio" value="ME" name="branch"> ME
+<label>
+<br>
+<br>
+Year of Passing
+</label><br>
+<input type="radio" value="2022" name="year" checked> 2022
+<input type="radio" value="2023" name="year"> 2023
+<input type="radio" value="2024" name="year"> 2024
+<input type="radio" value="2025" name="year"> 2025
+<label>
+<br>
+<br>
+<label>
+ 
+Comments: <textarea cols="65" name="Comment">
+</p>
+<br />
+
+<p>Comments: <textarea cols="65" name="Comment"> </textarea></p>
+<input type="submit" value="submit" name="Submit" />
+<input type="reset" value="Reset" name="Reset" />
+</p>
+
+</form>
+</body>
